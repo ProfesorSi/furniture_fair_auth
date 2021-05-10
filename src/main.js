@@ -9,8 +9,12 @@ Vue.use(swal);
 
 import "bootstrap/dist/css/bootstrap.css";
 
+// const base = axios.create({
+//   baseURL: "http://localhost:4000"
+// });
+
 const base = axios.create({
-  baseURL: "http://localhost:4000"
+  baseURL: process.env.BASE_URL
 });
 
 Vue.prototype.$http = base;
