@@ -9,13 +9,13 @@ Vue.use(swal);
 
 import "bootstrap/dist/css/bootstrap.css";
 
-// const base = axios.create({
-//   baseURL: "http://localhost:4000"
-// });
-
 const base = axios.create({
-  baseURL: process.env.BASE_URL
+  baseURL: "http://auth.sajamnamjestaja.com"
 });
+
+// const base = axios.create({
+//   baseURL: process.env.BASE_URL
+// });
 
 Vue.prototype.$http = base;
 Vue.config.productionTip = false;
