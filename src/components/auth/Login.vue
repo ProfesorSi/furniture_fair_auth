@@ -23,14 +23,14 @@
             v-model="login.password"
           />
           <p>
-            Dont have an account??<router-link to="/register"
-              >click here</router-link
+            Nemate račun??<router-link to="/register"
+              >Klikni za registraciju</router-link
             >
           </p>
           <!-- Sign in button -->
           <center>
             <button class="btn btn-primary btn-block w-75 my-4" type="submit">
-              Sign in
+              Prijava
             </button>
           </center>
         </form>

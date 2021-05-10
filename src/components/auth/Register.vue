@@ -11,7 +11,7 @@
             type="text"
             id="name"
             class="form-control mb-5"
-            placeholder="Name"
+            placeholder="Naziv izlagaca"
             v-model="register.name"
             required
           />
@@ -32,13 +32,13 @@
             v-model="register.password"
           />
           <p>
-            Already have an account??<router-link to="/"
-              >click here</router-link
+            Već imate račun??<router-link to="/"
+              >klikni</router-link
             >
             <!-- Sign in button -->
             <center>
               <button class="btn btn-primary btn-block w-75 my-4" type="submit">
-                Sign in
+                Registruj se
               </button>
             </center>
           </p>
