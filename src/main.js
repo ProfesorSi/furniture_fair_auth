@@ -10,7 +10,7 @@ Vue.use(swal);
 import "bootstrap/dist/css/bootstrap.css";
 
 const base = axios.create({
-  baseURL: "http://auth.sajamnamjestaja.com"
+  baseURL: "https://auth.sajamnamjestaja.com"
 });
 
 // const base = axios.create({
