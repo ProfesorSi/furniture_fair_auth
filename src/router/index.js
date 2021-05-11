@@ -20,7 +20,24 @@ const routes = [
     path: "/register",
     name: "register",
     component: () => import("../views/Register.vue")
+  },
+  {
+    path: "/products",
+    alias: "/products",
+    name: "products",
+    component: () => import("../components/products/ProductsList") 
+  },
+  {
+    path: "/products/:id",
+    name: "product-details",
+    component: () => import("../components/products/Product")
+  },
+  {
+    path: "/add",
+    name: "add",
+    component: () => import("../components/products/AddProduct")
   }
+
 ];
 const router = new VueRouter({
   mode: "history",
