@@ -2,23 +2,23 @@ import http from "../http-common";
 
 class ProductDataService {
     getAll() {
-        return http.get("http://localhost:3000/api/products");
+        return http.get("http://crud.sajamnamjestaja.com/api/products");
     }
     
     get(id) {
-        return http.get(`http://localhost:3000/api/products/${id}`);
+        return http.get(`http://crud.sajamnamjestaja.com/api/products/${id}`);
     }
 
     create(data) {
-        return http.post("http://localhost:3000/api/products", data);
+        return http.post("http://crud.sajamnamjestaja.com/api/products", data);
     }
 
     update(id, data) {
-        return http.put(`http://localhost:3000/api/products/${id}`, data);
+        return http.put(`http://crud.sajamnamjestaja.com/api/products/${id}`, data);
     }
 
     delete(id) {
-        return http.delete(`http://localhost:3000/api/products/${id}`);
+        return http.delete(`http://crud.sajamnamjestaja.com/api/products/${id}`);
     }
 
     deleteAll() {
@@ -26,7 +26,7 @@ class ProductDataService {
     }
 
     findByTitle(title) {
-        return http.get(`http://localhost:3000/api/products?title=${title}`);
+        return http.get(`http://crud.sajamnamjestaja.com/api/products?title=${title}`);
     }
 }
 
