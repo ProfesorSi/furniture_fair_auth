@@ -50,13 +50,46 @@
         </div>
 
         <div class="form-group">
-          <label for="description">Slika (link na fotografiju proizvoda)</label>
+          <label for="image">Slika 1 (link na fotografiju proizvoda)</label>
           <input
             class="form-control"
             id="imageURL"
             required
             v-model="product.imageURL"
             name="imageURL"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="image">Slika 2 (link na fotografiju proizvoda)</label>
+          <input
+            class="form-control"
+            id="imageURL1"
+            required
+            v-model="product.imageURL"
+            name="imageURL11"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="image">Slika 3 (link na fotografiju proizvoda)</label>
+          <input
+            class="form-control"
+            id="imageURL2"
+            required
+            v-model="product.imageURL"
+            name="imageURL2"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="image">Slika 4 (link na fotografiju proizvoda)</label>
+          <input
+            class="form-control"
+            id="imageURL3"
+            required
+            v-model="product.imageURL"
+            name="imageURL3"
           />
         </div>
 
@@ -77,6 +110,13 @@
           <option>Dnevni boravak</option>
           <option>Kreveti i spavace sobe</option>
           <option>Kuhinje</option>
+          <option>Art i dekor</option>
+          <option>Trpezarija</option>
+          <option>Ormari</option>
+          <option>Handmade kutak</option>
+          <option>Usluge dizajna</option>
+          <option>Kancelarijski namještaj</option>
+          <option>Baštenski program i ostalo</option>
         </select>
         <br />
         <span>Odabrana kategorija: {{ product.category }}</span>
