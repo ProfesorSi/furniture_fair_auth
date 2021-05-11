@@ -54,10 +54,16 @@
           <label><strong>Status:</strong></label>
           {{ currentProduct.published ? "Published" : "Pending" }}
         </div> -->
-
+<!-- 
         <a class="badge badge-warning" :href="'/products/' + currentProduct.id">
           Uredi proizvod
-        </a>
+        </a> -->
+
+        <!-- <router-link :to="{
+          name: 'Product',
+          params: currentProduct.id,
+          props: { id: currentProduct.id }
+        }">Uredi</router-link> -->
       </div>
       <div v-else>
         <br />
