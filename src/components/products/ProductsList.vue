@@ -1,5 +1,7 @@
 <template>
+  
   <div class="list row">
+  <Navigation /> <hr>
     <div class="col-md-8">
       <div class="input-group mb-3">
         <input
@@ -67,9 +69,13 @@
 
 <script>
 import ProductDataService from "../../services/ProductDataService";
+import Navigation from "../Navigation";
 
 
 export default {
+  components: {
+    Navigation
+  },
   name: "products-list",
   data() {
     return {
@@ -133,9 +139,11 @@ export default {
 <style>
 .list {
   text-align: left;
-  max-width: 750px;
+  max-width: 100%;
   margin: auto;
 }
+
+
 
 .badge-warning {
   background: rgb(100, 96, 96);
