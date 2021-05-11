@@ -112,7 +112,7 @@ import ProductDataService from "../../services/ProductDataService";
 import Navigation from "../Navigation";
 
 export default {
-  name: "product",
+  name: "Product",
   components: {
     Navigation
   },

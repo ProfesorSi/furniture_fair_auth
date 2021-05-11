@@ -30,7 +30,8 @@ const routes = [
   {
     path: "/products/:id",
     name: "product-details",
-    component: () => import("../components/products/Product")
+    component: () => import("../components/products/Product"),
+    props: true
   },
   {
     path: "/add",
