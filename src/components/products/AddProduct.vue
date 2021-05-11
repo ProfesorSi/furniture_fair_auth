@@ -66,7 +66,7 @@
             class="form-control"
             id="imageURL1"
             required
-            v-model="product.imageURL"
+            v-model="product.imageURL1"
             name="imageURL11"
           />
         </div>
@@ -77,7 +77,7 @@
             class="form-control"
             id="imageURL2"
             required
-            v-model="product.imageURL"
+            v-model="product.imageURL2"
             name="imageURL2"
           />
         </div>
@@ -88,7 +88,7 @@
             class="form-control"
             id="imageURL3"
             required
-            v-model="product.imageURL"
+            v-model="product.imageURL3"
             name="imageURL3"
           />
         </div>
