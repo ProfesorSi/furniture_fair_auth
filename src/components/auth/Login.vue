@@ -59,7 +59,7 @@ export default {
           this.$router.push("/home");
         }
       } catch (err) {
-        this.$swal("Error", "Something Went Wrong", "error");
+        this.$swal("Greška", "Došlo je do greške", "greška");
         console.log(err.response);
       }
     }

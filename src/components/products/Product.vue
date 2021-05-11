@@ -1,5 +1,8 @@
 <template>
-  <div v-if="currentProduct" class="edit-form">
+  <div>
+    <Navigation />
+
+    <div v-if="currentProduct" class="edit-form">
     <h4>Proizvod</h4>
     <form>
       <div class="form-group">
@@ -101,13 +104,18 @@
     <br />
     <p>Please click on a Product...</p>
   </div>
+  </div>
 </template>
 
 <script>
 import ProductDataService from "../../services/ProductDataService";
+import Navigation from "../Navigation";
 
 export default {
   name: "product",
+  components: {
+    Navigation
+  },
   data() {
     return {
       currentProduct: null,
@@ -174,6 +182,7 @@ export default {
 </script>
 
 <style>
+
 .edit-form {
   max-width: 300px;
   margin: auto;

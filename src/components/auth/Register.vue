@@ -67,16 +67,16 @@ export default {
         if (token) {
           localStorage.setItem("jwt", token);
           this.$router.push("/");
-          this.$swal("Success", "Registration Was successful", "success");
+          this.$swal("Uspješna registracija", "Uspješna registracija", "Uspješna registracija");
         } else {
-          this.$swal("Error", "Something Went Wrong", "error");
+          this.$swal("Greška", "Došlo je do greške", "greška");
         }
       } catch (err) {
         let error = err.response;
         if (error.status == 409) {
-          this.$swal("Error", error.data.message, "error");
+          this.$swal("Greška", error.data.message, "greška");
         } else {
-          this.$swal("Error", error.data.err.message, "error");
+          this.$swal("Greška", error.data.err.message, "greška");
         }
       }
     },

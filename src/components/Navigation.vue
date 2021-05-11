@@ -32,6 +32,8 @@ export default {
 
 <style scoped>
 
+
+
 .active {
     color: white;
 }
