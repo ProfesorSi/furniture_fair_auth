@@ -163,7 +163,7 @@
             <option>NEVA doo</option>
             <option>agha-kids furniture</option>
             <option>Mourah doo</option>
-            <option>Winner doo</option>
+            <option>Winer doo</option>
             <option>Dallas International</option>
             <option>G Wood by Goletić</option>
             <option>Simperfect</option>
@@ -172,7 +172,7 @@
             <option>Bapas Consulting</option>
           </select>
           <br />
-        <span> {{ product.exhibitor }}</span>
+          <span> {{ product.exhibitor }}</span>
         </div>
 
         <br />
@@ -226,6 +226,7 @@ export default {
         // published: false,
         price: null,
         imageURL: "",
+        exhibitor: "",
         category: "",
       },
       submitted: false,
@@ -238,6 +239,7 @@ export default {
         description: this.product.description,
         price: this.product.price,
         imageURL: this.product.imageURL,
+        exhibitor: this.product.exhibitor,
         category: this.product.category,
       };
 
