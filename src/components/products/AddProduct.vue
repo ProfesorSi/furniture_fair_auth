@@ -163,7 +163,7 @@
             <option>NEVA doo</option>
             <option>agha-kids furniture</option>
             <option>Mourah doo</option>
-            <option>Winer doo</option>
+            <option>Winer d.o.o.</option>
             <option>Dallas International</option>
             <option>G Wood by Goletić</option>
             <option>Simperfect</option>
