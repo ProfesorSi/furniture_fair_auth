@@ -149,8 +149,9 @@
         {{ currentProduct.published ? "Published" : "Pending" }}
       </div> -->
 
-        <div class="form-group">
-          <label for="image">Slika</label>
+        <div class="images">
+          <div class="form-group">
+          <label for="image">Slika 1</label>
           <div class="image">
             <input
               type="text"
@@ -160,6 +161,46 @@
             />
             <img :src="currentProduct.imageURL" alt="" />
           </div>
+        </div>
+
+        <div class="form-group">
+          <label for="image">Slika 2</label>
+          <div class="image">
+            <input
+              type="text"
+              class="form-control"
+              id="imageURL1"
+              v-model="currentProduct.imageURL1"
+            />
+            <img :src="currentProduct.imageURL1" alt="" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="image">Slika 3</label>
+          <div class="image">
+            <input
+              type="text"
+              class="form-control"
+              id="imageURL2"
+              v-model="currentProduct.imageURL2"
+            />
+            <img :src="currentProduct.imageURL2" alt="" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="image">Slika 4</label>
+          <div class="image">
+            <input
+              type="text"
+              class="form-control"
+              id="imageURL3"
+              v-model="currentProduct.imageURL3"
+            />
+            <img :src="currentProduct.imageURL3" alt="" />
+          </div>
+        </div>
         </div>
       </form>
 
@@ -270,6 +311,11 @@ export default {
 </script>
 
 <style>
+
+.images {
+  columns: 2;
+}
+
 .edit-form {
   max-width: 300px;
   margin: auto;
