@@ -1,7 +1,7 @@
 <template>
-  
   <div class="list row">
-  <Navigation /> <hr>
+    <Navigation />
+    <hr />
     <div class="col-md-8">
       <div class="input-group mb-3">
         <input
@@ -54,16 +54,18 @@
           <label><strong>Status:</strong></label>
           {{ currentProduct.published ? "Published" : "Pending" }}
         </div> -->
-<!-- 
-        <a class="badge badge-warning" :href="'/products/' + currentProduct.id">
-          Uredi proizvod
-        </a> -->
 
-        <!-- <router-link :to="{
-          name: 'Product',
-          params: currentProduct.id,
-          props: { id: currentProduct.id }
-        }">Uredi</router-link> -->
+        <!-- <a class="badge badge-warning" :href="'api/products/' + currentProduct.id">
+          Uredi proizvod
+        </a>  -->
+
+        <router-link
+          :to="{
+            name: 'product-details',
+            params: { id: currentProduct.id }
+          }"
+          >Uredi</router-link
+        >
       </div>
       <div v-else>
         <br />
@@ -77,10 +79,9 @@
 import ProductDataService from "../../services/ProductDataService";
 import Navigation from "../Navigation";
 
-
 export default {
   components: {
-    Navigation
+    Navigation,
   },
   name: "products-list",
   data() {
@@ -148,8 +149,6 @@ export default {
   max-width: 100%;
   margin: auto;
 }
-
-
 
 .badge-warning {
   background: rgb(100, 96, 96);
