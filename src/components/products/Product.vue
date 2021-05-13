@@ -35,7 +35,7 @@
         </div>
 
         <div class="form-group">
-          <label for="category">Kategorija</label><br>
+          <label for="category">Kategorija</label><br />
           <select v-model="currentProduct.category">
             <option disabled value="">Odaberi kategoriju</option>
             <option>Dnevni boravak</option>
@@ -149,8 +149,17 @@
         {{ currentProduct.published ? "Published" : "Pending" }}
       </div> -->
 
-        <div class="image">
-          <img :src="currentProduct.imageURL" alt="" />
+        <div class="form-group">
+          <label for="image">Slika</label>
+          <div class="image">
+            <input
+              type="text"
+              class="form-control"
+              id="imageURL"
+              v-model="currentProduct.imageURL"
+            />
+            <img :src="currentProduct.imageURL" alt="" />
+          </div>
         </div>
       </form>
 
@@ -267,7 +276,7 @@ export default {
 }
 
 .image {
-  width: 200px;
+  width: 100%;
   height: 200px;
 }
 
