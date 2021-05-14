@@ -14,7 +14,7 @@ import "bootstrap/dist/css/bootstrap.css";
 // });
 
 const base = axios.create({
-  baseURL: "https://auth-api.sajamnamjestaja.com"
+  baseURL: "https://furniture-fair-auth-api-gweza.ondigitalocean.app/auth-api"
 });
 
 
