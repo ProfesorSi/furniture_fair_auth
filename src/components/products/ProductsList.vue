@@ -40,7 +40,7 @@
       </button> -->
     </div>
     <div class="col-md-6">
-      <div v-if="currentProduct">
+      <div class="product" v-if="currentProduct">
         <h4>Proizvod</h4>
         <div>
           <label><strong>Naziv proizvoda:</strong></label>
@@ -49,6 +49,10 @@
         <div>
           <label><strong>Opis proizvoda:</strong></label>
           {{ currentProduct.description }}
+        </div>
+         <div>
+          <label><strong>Izlagač:</strong></label>
+          {{ currentProduct.exhibitor }}
         </div>
         <!-- <div>
           <label><strong>Status:</strong></label>
@@ -143,7 +147,12 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.product {
+  position: sticky;
+  top: 0;
+}
+
 .list {
   text-align: left;
   max-width: 100%;
