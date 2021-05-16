@@ -171,6 +171,7 @@
             <option>Mrak</option>
             <option>Bapas Consulting</option>
             <option>Magični san</option>
+             <option>VALJEVAC STOLARIJA</option>
           </select>
           <br />
           <span> {{ product.exhibitor }}</span>
