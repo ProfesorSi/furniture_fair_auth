@@ -173,7 +173,7 @@
             <option>Magični san</option>
             <option>VALJEVAC STOLARIJA</option>
             <option>Dineco d.o.o</option>
-            <option>Corpus CAD/CAM software</option>
+            <option>Corpus software</option>
 
           </select>
           <br />
