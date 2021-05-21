@@ -128,6 +128,10 @@
             <option>WMTA</option>
             <option>Mrak</option>
             <option>Bapas Consulting</option>
+            <option>Magični san</option>
+            <option>VALJEVAC STOLARIJA</option>
+            <option>Dineco d.o.o</option>
+            <option>Corpus software</option>
           </select>
           <br />
           <span> {{ currentProduct.exhibitor }}</span>
